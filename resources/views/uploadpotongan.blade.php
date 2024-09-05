@@ -1,4 +1,5 @@
 <x-Layout>
+    <x-slot:title>{{ $title }}</x-slot:title>
    <x-heading-top>Upload Potongan</x-heading-top>
    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa facilis adipisci iusto laboriosam obcaecati ullam officiis non officia deserunt assumenda ut, sint ab explicabo excepturi rerum architecto laborum. Quisquam, nostrum.</p>
    <div class="flex mt-8 justify-end pb-16">

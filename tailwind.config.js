@@ -22,8 +22,13 @@ export default {
         gray2: '#b3b3b3',
         gray3: '#F8F8F8',
       }
+      
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+  
 }
+
 

@@ -30,7 +30,7 @@
         <nav class="-mb-px flex space-x-8">
           <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
          
-          <a href="#" class="whitespace-nowrap border-b-2 border-indigo-500 px-1 pb-4 text-sm font-medium text-indigo-600" aria-current="page">Tabel Wilayah</a>
+          <a href="#" class=" whitespace-nowrap border-b-2 border-indigo-500 px-1 pb-4 text-sm font-medium text-indigo-600" aria-current="page">Tabel Wilayah</a>
           <a href="#" class="whitespace-nowrap border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Tabel Layanan</a>
         </nav>
       </div>

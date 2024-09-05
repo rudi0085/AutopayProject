@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" class="overflow-hidden">
 <head>
@@ -5,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     @vite('resources/css/app.css')
-    <title>Login</title>
+    <title>{{ $title }}</title>
 </head>
 <body class="bg-brandsSecond">
     <nav>
