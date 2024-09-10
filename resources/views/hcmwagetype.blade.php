@@ -1,5 +1,5 @@
 <x-Layout>
-    <x-slot:title>{{ $title }}</x-slot:title>
+    {{-- <x-slot:title>{{ $title }}</x-slot:title> --}}
     <x-heading-top>
         HCM Wagetype
     </x-heading-top>

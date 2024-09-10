@@ -40,6 +40,24 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        // 'api' => [
+        //     'driver' => 'token',
+        //     'provider' => 'admins', // This is the change i made default was users and i don't have users provider
+        //     'hash' => false,
+        // ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admin',
+        ],
+        'author' => [
+            'driver' => 'session',
+            'provider' => 'author',
+        ],
+        'users' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
     ],
 
     /*
@@ -60,9 +78,18 @@ return [
     */
 
     'providers' => [
+       
+        'admin' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
+        ],
+        'author' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
+        ],
         'users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', App\Models\User::class),
+            'model' => App\Models\Users::class,
         ],
 
         // 'users' => [

@@ -1,5 +1,5 @@
 <x-Layout>
-    <x-slot:title>{{ $title }}</x-slot:title>
+    {{-- <x-slot:title>{{ $title }}</x-slot:title> --}}
     <x-heading-top>Upload Premi</x-heading-top>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quisquam consequatur ea omnis est enim mollitia id possimus corporis officia, voluptates nobis sunt maxime ducimus aperiam cumque quam tenetur impedit.</p>
     <div class="flex mt-8 justify-end pb-16">

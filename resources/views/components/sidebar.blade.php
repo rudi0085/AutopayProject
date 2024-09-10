@@ -371,7 +371,7 @@
            </li> --}}
            <li class="-mx-6 mt-auto">
              <a href="/profile" :active="request()->is('profile')" class="flex items-center gap-x-4 px-6 py-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50">
-               <img class="h-8 w-8 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+               <img class="h-8 w-8 rounded-full bg-gray-50" src="https://images.goodkind.id/dct/berkas-silon/calon/487469/pas_foto/1696312669_2411c6fc-845e-4f72-898e-938e847c1945.jpeg" alt="">
                <span class="sr-only">Your profile</span>
                <span aria-hidden="true">Agus Mulyono</span>
              </a>

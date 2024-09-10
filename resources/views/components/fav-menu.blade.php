@@ -11,7 +11,7 @@
         </div>
         <div class="mt-8">
           <h3 class="text-base font-semibold leading-6 text-gray-900">
-            <a href="#" class="focus:outline-none">
+            <a href="/setupmaster" class="focus:outline-none">
               <!-- Extend touch target to entire panel -->
               <span class="absolute inset-0" aria-hidden="true"></span>
               Setup Master
@@ -35,7 +35,7 @@
         </div>
         <div class="mt-8">
           <h3 class="text-base font-semibold leading-6 text-gray-900">
-            <a href="#" class="focus:outline-none">
+            <a href="/kompilasigaji" class="focus:outline-none">
               <!-- Extend touch target to entire panel -->
               <span class="absolute inset-0" aria-hidden="true"></span>
               Kompilasi Gaji
@@ -59,7 +59,7 @@
         </div>
         <div class="mt-8">
           <h3 class="text-base font-semibold leading-6 text-gray-900">
-            <a href="#" class="focus:outline-none">
+            <a href="/managementsub" class="focus:outline-none">
               <!-- Extend touch target to entire panel -->
               <span class="absolute inset-0" aria-hidden="true"></span>
               Management Sub
@@ -83,7 +83,7 @@
         </div>
         <div class="mt-8">
           <h3 class="text-base font-semibold leading-6 text-gray-900">
-            <a href="#" class="focus:outline-none">
+            <a href="/datagajisap" class="focus:outline-none">
               <!-- Extend touch target to entire panel -->
               <span class="absolute inset-0" aria-hidden="true"></span>
               Data Gaji SAP
@@ -107,7 +107,7 @@
         </div>
         <div class="mt-8">
           <h3 class="text-base font-semibold leading-6 text-gray-900">
-            <a href="#" class="focus:outline-none">
+            <a href="/uploadpremi" class="focus:outline-none">
               <!-- Extend touch target to entire panel -->
               <span class="absolute inset-0" aria-hidden="true"></span>
               Upload Premi
@@ -131,7 +131,7 @@
         </div>
         <div class="mt-8">
           <h3 class="text-base font-semibold leading-6 text-gray-900">
-            <a href="#" class="focus:outline-none">
+            <a href="/hakakses" class="focus:outline-none">
               <!-- Extend touch target to entire panel -->
               <span class="absolute inset-0" aria-hidden="true"></span>
               Hak Akses
