@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="x-icon" href="public/src/img/frame.png">
     @vite('resources/css/app.css', 'resources/js/app.js')
+    <script src="resource/js/sapp.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdnjs.com/libraries/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <title>AutoPay</title>
 </head>
 <body>
@@ -44,6 +47,9 @@
         </div>
         
     </div>
+ 
+    
+    
 </body>
 
 </html>

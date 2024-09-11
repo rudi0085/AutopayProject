@@ -42,6 +42,7 @@ Route::get('/hcmwagetype', [\App\Http\Controllers\HcmWagetypeController::class, 
 Route::get('/managementsub', [\App\Http\Controllers\ManagementSubController::class, 'index'])->name('managementsub.index');
 Route::get('/datagajisap', [\App\Http\Controllers\DataGajiSAPController::class, 'index'])->name('datagajisap.index');
 Route::get('/kompilasigaji', [\App\Http\Controllers\KompilasiGajiSAPController::class, 'index'])->name('kompilasigaji.index');
+Route::get('/profile', [\App\Http\Controllers\KompilasiGajiSAPController::class, 'index'])->name('profile.index');
 
 // Route::get('/', function () {
 //     return view('landingpage', ['title'=>'Auto Pay']);
