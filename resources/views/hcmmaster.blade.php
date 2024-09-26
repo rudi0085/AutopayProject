@@ -5,7 +5,7 @@
     <div class="flex flex-wrap mt-8 justify-end items-center pb-16 gap-6">
         {{-- Tombol tambah --}}
         <div class="relative flex-none" x-data="{open:false}">
-            <button @click="open = !open" @click.outside="open =false" type="button" class="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Tambah</button>
+            <button @click="open = !open" @click.outside="open =false" type="button" class="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Tambah</button>
             <div
             :class="open ? '' : 'hidden'"
             x-clock
@@ -24,7 +24,7 @@
 
         {{-- Tombol Edit --}}
         <div class="relative flex-none" x-data="{open:false}">
-            <button @click="open = !open" @click.outside="open =false" type="button" class="min-w-max rounded-md bg-yellow-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Edit</button>
+            <button @click="open = !open" @click.outside="open =false" type="button" class="min-w-max rounded-md bg-yellow-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Edit</button>
             <div
             :class="open ? '' : 'hidden'"
             x-clock
@@ -44,7 +44,7 @@
 
         {{-- Tombol Delete --}}
         <div class="relative flex-none" x-data="{open:false}">
-            <button @click="open = !open" @click.outside="open =false" type="button" class="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Hapus</button>
+            <button @click="open = !open" @click.outside="open =false" type="button" class="rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Hapus</button>
             <div
             :class="open ? '' : 'hidden'"
             x-clock

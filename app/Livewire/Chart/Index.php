@@ -11,10 +11,13 @@ class Index extends Component
     {
 
         $columnChartModel = (new ColumnChartModel())
-        ->setTitle('Expenses by Type')
-        ->addColumn('Food', 100, '#f6ad55')
-        ->addColumn('Shopping', 200, '#fc8181')
-        ->addColumn('Travel', 300, '#90cdf4');
+        ->setTitle('Jumlah Premi')
+        ->addColumn('Ngobo', 600, '#f6ad55')
+        ->addColumn('Jolong', 200, '#fc8181')
+        ->addColumn('Kandir', 300, '#90cdf4')
+        ->addColumn('Ngobo', 700, '#ffc09f')
+        ->addColumn('Jolong', 400, '#ffee93')
+        ->addColumn('Kandir', 450, '#a0ced9');
         return view('livewire.chart.index')->with(['columnChartModel' => $columnChartModel]);
 
         

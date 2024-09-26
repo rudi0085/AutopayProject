@@ -98,9 +98,7 @@
                       </svg>
                       Dashboard
                 </x-nav-link>
-                 
                  <x-nav-link href="/setupmaster" :active="request()->is('setupmaster')">
-                      
                       <svg class="{{ request()->is('setupmaster') ? 'text-brands' : 'text-gray-400' }} h-6 w-6 shrink-0 text-gray-400 group-hover:text-brands" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
                       </svg>
@@ -181,28 +179,37 @@
                       Kompilasi Gaji
                 </x-nav-link>
                      
-                 <li>
-                   <div class="text-xs font-semibold leading-6 text-gray-400">Your teams</div>
-                   <ul role="list" class="-mx-2 mt-2 space-y-1">
-                     <li>
-                       <!-- Current: "bg-gray-50 text-brands", Default: "text-gray-700 hover:text-brands hover:bg-gray-50" -->
-                       <a href="#" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-brands">
-                         <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-bratext-brands group-hover:text-brands">H</span>
-                         <span class="truncate">Heroicons</span>
-                       </a>
-                     </li>
-                     <li>
-                       <a href="#" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-brands">
-                         <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-bratext-brands group-hover:text-brands">T</span>
-                         <span class="truncate">Tailwind Labs</span>
-                       </a>
-                     </li>
-                     <li>
-                       <a href="#" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-brands">
-                         <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-bratext-brands group-hover:text-brands">W</span>
-                         <span class="truncate">Workcation</span>
-                       </a>
-                     </li>
+                <li>
+                  <div class="text-xs font-semibold leading-6 text-gray-400">Konfigurasi</div>
+                  <ul role="list" class="-mx-2 mt-2 space-y-1">
+                    {{-- <li>
+                      <!-- Current: "bg-gray-50 text-brands", Default: "text-gray-700 hover:text-brands hover:bg-gray-50" -->
+                      <a href="#" class="  group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-brands">
+                        <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-bratext-brands group-hover:text-brands">H</span>
+                        <span class="truncate">Heroicons</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-brands">
+                        <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-bratext-brands group-hover:text-brands">T</span>
+                        <span class="truncate">Tailwind Labs</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-brands">
+                        <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-white text-[0.625rem] font-medium text-gray-400 group-hover:border-bratext-brands group-hover:text-brands">W</span>
+                        <span class="truncate">Workcation</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li> --}}
+                <li class="-mx-6 mt-auto">
+                  <a href="/profile" :active="request()->is('profile')" class="flex items-center gap-x-4 px-6 py-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-50">
+                    <img class="h-8 w-8 rounded-full bg-gray-50" src="https://images.goodkind.id/dct/berkas-silon/calon/487469/pas_foto/1696312669_2411c6fc-845e-4f72-898e-938e847c1945.jpeg" alt="">
+                    <span class="sr-only">Your profile</span>
+                    <span aria-hidden="true">Agus Mulyono</span>
+                  </a>
+                </li>
                    </ul>
                  </li>
                </ul>
@@ -346,7 +353,7 @@
              </ul>
            </li>
            <li>
-             <div class="text-xs font-semibold leading-6 text-gray-400">Your teams</div>
+             <div class="text-xs font-semibold leading-6 text-gray-400">Konfigurasi</div>
              <ul role="list" class="-mx-2 mt-2 space-y-1">
                {{-- <li>
                  <!-- Current: "bg-gray-50 text-brands", Default: "text-gray-700 hover:text-brands hover:bg-gray-50" -->

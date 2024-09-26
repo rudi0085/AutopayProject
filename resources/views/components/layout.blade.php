@@ -12,11 +12,13 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <title>AutoPay</title>
 </head>
-<body>
+<body >
 
     
 
     <div class="container">
+
+
         
         <div class="relative" x-data="{open:true , openMobile:true}">
             <x-Header></x-Header>
@@ -51,5 +53,11 @@
     
     
 </body>
+
+<script>
+    $(window).on('load', function(){
+        $('spiner-loader').fadeout();
+    })
+</script>
 
 </html>

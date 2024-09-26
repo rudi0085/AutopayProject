@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot:title>{{ $title }}</x-slot:title>
+    <x-slot:title>Profile</x-slot:title>
     
       
       <div class="mx-auto max-w-7xl pt-0 lg:flex lg:gap-x-16 lg:px-8">
@@ -61,7 +61,7 @@
           </nav>
         </aside> --}}
       
-        <main class="px-4 py-16 sm:px-6 lg:flex-auto lg:px-0 lg:py-20">
+        <main class="px-4 py-16 sm:px-6 lg:flex-auto lg:px-0 lg:py-0">
           <div class="mx-auto max-w-2xl space-y-16 sm:space-y-20 lg:mx-0 lg:max-w-none">
             <div>
               <h2 class="text-base font-semibold leading-7 text-gray-900">Profile</h2>
@@ -69,16 +69,16 @@
       
               <dl class="mt-6 space-y-6 divide-y divide-gray-100 border-t border-gray-200 text-sm leading-6">
                 <div class="pt-6 sm:flex">
-                  <dt class="font-medium text-gray-900 sm:w-64 sm:flex-none sm:pr-6">Full name</dt>
+                  <dt class="font-medium text-gray-900 sm:w-64 sm:flex-none sm:pr-6">Nama</dt>
                   <dd class="mt-1 flex justify-between gap-x-6 sm:mt-0 sm:flex-auto">
-                    <div class="text-gray-900">Tom Cook</div>
+                    <div class="text-gray-900">Agus Mulyono</div>
                     <button type="button" class="font-semibold text-indigo-600 hover:text-indigo-500">Update</button>
                   </dd>
                 </div>
                 <div class="pt-6 sm:flex">
                   <dt class="font-medium text-gray-900 sm:w-64 sm:flex-none sm:pr-6">Email address</dt>
                   <dd class="mt-1 flex justify-between gap-x-6 sm:mt-0 sm:flex-auto">
-                    <div class="text-gray-900">tom.cook@example.com</div>
+                    <div class="text-gray-900">Agusmuyono@ptpnreg3.com</div>
                     <button type="button" class="font-semibold text-indigo-600 hover:text-indigo-500">Update</button>
                   </dd>
                 </div>
@@ -92,7 +92,7 @@
               </dl>
             </div>
       
-            <div>
+            {{-- <div>
               <h2 class="text-base font-semibold leading-7 text-gray-900">Bank accounts</h2>
               <p class="mt-1 text-sm leading-6 text-gray-500">Connect bank accounts to your account.</p>
       
@@ -110,25 +110,25 @@
               <div class="flex border-t border-gray-100 pt-6">
                 <button type="button" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500"><span aria-hidden="true">+</span> Add another bank</button>
               </div>
-            </div>
+            </div> --}}
       
             <div>
-              <h2 class="text-base font-semibold leading-7 text-gray-900">Integrations</h2>
+              <h2 class="text-base font-semibold leading-7 text-gray-900">Akses Akun</h2>
               <p class="mt-1 text-sm leading-6 text-gray-500">Connect applications to your account.</p>
       
               <ul role="list" class="mt-6 divide-y divide-gray-100 border-t border-gray-200 text-sm leading-6">
                 <li class="flex justify-between gap-x-6 py-6">
-                  <div class="font-medium text-gray-900">QuickBooks</div>
+                  <div class="font-medium text-gray-900">Premi</div>
                   <button type="button" class="font-semibold text-indigo-600 hover:text-indigo-500">Update</button>
                 </li>
               </ul>
       
               <div class="flex border-t border-gray-100 pt-6">
-                <button type="button" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500"><span aria-hidden="true">+</span> Add another application</button>
+                <button type="button" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500"><span aria-hidden="true">+</span> Tambah Akses</button>
               </div>
             </div>
       
-            <div>
+            {{-- <div>
               <h2 class="text-base font-semibold leading-7 text-gray-900">Language and dates</h2>
               <p class="mt-1 text-sm leading-6 text-gray-500">Choose what language and date format to use throughout your account.</p>
       
@@ -158,7 +158,7 @@
                   </dd>
                 </div>
               </dl>
-            </div>
+            </div> --}}
           </div>
         </main>
       </div>

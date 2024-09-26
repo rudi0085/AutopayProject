@@ -21,7 +21,7 @@
     </div>
   </dl>
   
-  <div class="border w-full h-[500px] mt-8 ">
+  <div class="border w-full h-[500px] mt-8 mb-8">
 
 
     {{-- Tampilan Chart --}}

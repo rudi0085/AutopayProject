@@ -8,11 +8,12 @@ use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
-    // public function index(){
-    //     return view('auth.login');
-    // }
-    // public function login(Request $request)
-    // {
+    public function index(){
+        return view('auth.login');
+    }
+    public function login(Request $request)
+    {
+        return view('dashboard');
     //     // Session::flash('email', $request->email);
     //     $request->validate([
     //         'email' => 'required|email',
@@ -54,7 +55,7 @@ class AuthController extends Controller
     //     // }
 
        
-    // }
+    }
 
     // public function keluar(){
 
