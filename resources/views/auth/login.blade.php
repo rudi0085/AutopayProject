@@ -39,38 +39,48 @@
                     
                     <span class="text-3xl font-plusJakartaLogo font-extrabold text-brands ">Masuk</span>
                     <span class="text-xs text-grayBrand mt-3 md:text-sm ">Silahkan masukan Email dan password yang sesuai!</span>
-                    <div class="py-3">
+                    
+                    <form action=" {{ route('auth.login') }} " method="POST">
+                        @csrf
+                        {{-- Iputan Email --}}
                         <label for="email" class="text-brands font-plusJakartaLogo font-medium">Email</label>
-                        <input type="text" class="py-2 px-3 w-full mt-1 border border-brands active:border-brandsSecond rounded-lg bg-bgColor">
-                    </div>
-                    <div class="py-0">
-                        <div class="flex justify-between">
-                            <label for="password" class="text-brands  font-plusJakartaLogo font-medium">Password</label>
-                            <a href="/" class="text-sm text-grayBrand ">Lupa Password?</a>
-                        </div>
-                        
-                        <input type="password" class="py-2 px-3 w-full mt-1 border bg-bgColor border-brands active:border-brandsSecond rounded-lg ">
-                    </div>
-                    <div class="items-center flex mb-4 ">
-                        <div class="flex mt-3 rounded-full items-center justify-center">
+                        <input type="email" name="email"  class="form-control py-2 px-3 w-full mt-1 border border-brands active:border-brandsSecond rounded-lg bg-bgColor">
+                        {{-- Lupa Password --}}
+                            <div class="flex justify-between">
+                                <label for="password" class="text-brands  font-plusJakartaLogo font-medium">Password</label>
+                                <a href="/" class="text-sm text-grayBrand ">Lupa Password?</a>
+                            </div>
                             
-                    <label class="flex flex-wrap cursor-pointer">
-                        <input type="checkbox" value="" class="sr-only peer" checked>
-                        <div class="relative w-11 h-6 bg-bgColo  rounded-full peer peer-focus:ring-2 peer-focus:ring-brands dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-bgColor after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-brands"></div>
-                        
-                    </label>
-  
+                            <input value="{{ Session::get('email') }}" type="password" name="password" class="form-control py-2 px-3 w-full mt-1 border bg-bgColor border-brands active:border-brandsSecond rounded-lg ">
+                      
+
+                        <div class="items-center flex mb-4 ">
+                            <div class="flex mt-3 rounded-full items-center justify-center">
+                                
+                        <label class="flex flex-wrap cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer" checked>
+                            <div class="relative w-11 h-6 bg-bgColo  rounded-full peer peer-focus:ring-2 peer-focus:ring-brands dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-bgColor after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-brands"></div>
+                            
+                        </label>
+      
+                            </div>
+                            <div class="mt-3 mx-5 text-base text-brands">
+                                Stay Logged In
+                            </div>
+                            
                         </div>
-                        <div class="mt-3 mx-5 text-base text-brands">
-                            Stay Logged In
+                       
+                        <div class="items-center justify-center mx-auto mt-6 ">
+                            <button type="submit"  class="bg-brands py-2 px-32 rounded-lg text-bgColor">
+                                Masuk
+                            </button>
                         </div>
-                        
-                    </div>
-                    <div class="items-center justify-center mx-auto mt-6 ">
-                        <a href="./dashboard"  class="bg-brands py-2 px-32 rounded-lg text-bgColor">
-                            Masuk
-                        </a>
-                    </div>
+                        {{-- </form> --}}
+
+
+                    </form>
+                    
+                    
                     <!-- lingkaran -->
                     <!-- <div class="bg-brands w-[26px] h-[26px] rounded-full m-1"></div> -->
                 </div>

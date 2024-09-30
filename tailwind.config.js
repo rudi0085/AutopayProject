@@ -4,6 +4,8 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
+    "./node_modules/flowbite/**/*.js"
+  
   ],
   theme: {
     extend: {
@@ -22,8 +24,25 @@ export default {
         gray2: '#b3b3b3',
         gray3: '#F8F8F8',
       }
+      
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')({
+      strategy: 'base',
+    }),
+    require('flowbite/plugin')({
+      charts: true,
+    })
+  ],
+//   module.exports = {
+
+//     plugins: [
+//         require('flowbite/plugin')
+//     ]
+
+// }
+  
 }
+
 

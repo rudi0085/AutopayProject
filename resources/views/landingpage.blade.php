@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
     <link rel="shortcut icon" href="public/src/frame.png" type="image/png/jpg">
-    <title>Auto Pay</title>
+    {{-- <title>{{ $title }}</title> --}}
 </head>
 <body class="bg-white">
     
